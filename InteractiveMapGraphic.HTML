@@ -446,7 +446,7 @@
             <path class="va-wv" d="m 722.7,296.9 .7,.6 -.8,1.2 1.5,.7 .1,1.5 4.4,2.3 2.3,-.1 1.9,-1.8 .8,-1.7 3,1.8 5.5,-2.4 .5,-.9 -.8,-.5 .6,-1.4 1.5,1 4.3,-3.1 .7,1.1 2.3,-2 -.1,-1.4 1.5,-1.9 -1.5,-1.2 1,-3.3 3.7,-6.3 -.4,-1.9 2.1,-2.2 -.4,-1.5 1.4,-1.7 .1,-4.7 2.3,.7 1.3,1.9 2.8,.5 1.3,-1.6 2.3,-8.5 2.4,1.1 1,-2.5 .9,-.8 1.4,-1.8 .9,-.8 .5,-2.1 1.2,-.8 -.1,-2.9 .8,-2.3 -.9,-1.6 .2,-.9 10,5.2 .5,-2.3 .4,-1.6 .4,-.7" />
         </g>
 
-        <circle class="state borders dccircle dc" cx="801.6" cy="252.1" r="5">
+        <circle class="state borders dccircle dc" cx="800" cy="251" r="8">
             <title>District of Columbia</title>
         </circle>
 
@@ -456,48 +456,47 @@
 </div>
 </div>
 
-    <br/>
-    <div id="ncPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+   <div id="ncPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>North Carolina</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="flPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="flPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Florida</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="gaPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="gaPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Georga</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="laPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="laPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Louisiana</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="dcPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="dcPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Washington DC</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="moPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="moPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Missouri</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="ksPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="ksPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Kansas</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="orPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="orPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Oregon</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="ctPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
+    <div id="ctPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
         <h1>Connecticut</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
@@ -514,8 +513,8 @@
                     ncPopover.classList.add('hidden');}
                 else {
                 ncPopover.classList.remove('hidden');
-                ncPopover.style.left = event.pageX - 95 + 'px';
-                ncPopover.style.top = event.pageY - 145 + 'px';}
+                ncPopover.style.left = event.pageX - 94 + 'px';
+                ncPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -528,8 +527,8 @@
                     flPopover.classList.add('hidden');}
                 else {
                     flPopover.classList.remove('hidden');
-                    flPopover.style.left = event.pageX - 95 + 'px';
-                    flPopover.style.top = event.pageY - 145 + 'px';}
+                    flPopover.style.left = event.pageX - 94 + 'px';
+                    flPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -543,8 +542,8 @@
                     gaPopover.classList.add('hidden');}
                 else {
                     gaPopover.classList.remove('hidden');
-                    gaPopover.style.left = event.pageX - 95 + 'px';
-                    gaPopover.style.top = event.pageY - 145 + 'px';}
+                    gaPopover.style.left = event.pageX - 94 + 'px';
+                    gaPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -558,8 +557,8 @@
                     laPopover.classList.add('hidden');}
                 else {
                     laPopover.classList.remove('hidden');
-                    laPopover.style.left = event.pageX - 95 + 'px';
-                    laPopover.style.top = event.pageY - 145 + 'px';}
+                    laPopover.style.left = event.pageX - 94 + 'px';
+                    laPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -572,8 +571,8 @@
                     dcPopover.classList.add('hidden');}
                 else {
                     dcPopover.classList.remove('hidden');
-                    dcPopover.style.left = event.pageX - 95 + 'px';
-                    dcPopover.style.top = event.pageY - 145 + 'px';}
+                    dcPopover.style.left = event.pageX - 94 + 'px';
+                    dcPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -586,8 +585,8 @@
                     moPopover.classList.add('hidden');}
                 else {
                     moPopover.classList.remove('hidden');
-                    moPopover.style.left = event.pageX - 95 + 'px';
-                    moPopover.style.top = event.pageY - 145 + 'px';}
+                    moPopover.style.left = event.pageX - 94 + 'px';
+                    moPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -600,8 +599,8 @@
                     ksPopover.classList.add('hidden');}
                 else {
                     ksPopover.classList.remove('hidden');
-                    ksPopover.style.left = event.pageX - 95 + 'px';
-                    ksPopover.style.top = event.pageY - 145 + 'px';}
+                    ksPopover.style.left = event.pageX - 94 + 'px';
+                    ksPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -614,8 +613,8 @@
                     orPopover.classList.add('hidden');}
                 else {
                     orPopover.classList.remove('hidden');
-                    orPopover.style.left = event.pageX - 95 + 'px';
-                    orPopover.style.top = event.pageY - 145 + 'px';}
+                    orPopover.style.left = event.pageX - 94 + 'px';
+                    orPopover.style.top = event.pageY - 135  + 'px';}
             });
         });
     });
@@ -629,13 +628,29 @@
                     ctPopover.classList.add('hidden');}
                 else {
                     ctPopover.classList.remove('hidden');
-                    ctPopover.style.left = event.pageX - 95 + 'px';
-                    ctPopover.style.top = event.pageY - 145 + 'px';}
+                    ctPopover.style.left = event.pageX - 94 + 'px';
+                    ctPopover.style.top = event.pageY - 135 + 'px';}
             });
         });
     });
+    document.body.appendChild(document.createElement('div')).id = 'myID';
+
 
     </script>
+
+<script>
+    jQuery(document).ready(function(){
+        jQuery('#ncPopover').appendTo("body");
+        jQuery('#flPopover').appendTo("body");
+        jQuery('#gaPopover').appendTo("body");
+        jQuery('#laPopover').appendTo("body");
+        jQuery('#dcPopover').appendTo("body");
+        jQuery('#moPopover').appendTo("body");
+        jQuery('#ksPopover').appendTo("body");
+        jQuery('#orPopover').appendTo("body");
+        jQuery('#ctPopover').appendTo("body");
+    });
+</script>
 
 </body>
 
