@@ -9,11 +9,9 @@
    
 
 </head>
-display: block; width: 800px; text-align: center margin;auto;
 <body>
-    <div style="display: flex;
-    justify-content: center;
-    align-items: center;">
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="display: block; width: 700px;">
     <svg xmlns="http://www.w3.org/2000/svg" width="959" height="593">
         <title>Blank map of the United States, territories not included</title>
         <defs>
@@ -501,6 +499,7 @@ display: block; width: 800px; text-align: center margin;auto;
         <a href="#">View Locations</a>
     </div>
 </div>
+</div>
 
     <script>
     
@@ -627,8 +626,8 @@ display: block; width: 800px; text-align: center margin;auto;
                     ctPopover.classList.add('hidden');}
                 else {
                     ctPopover.classList.remove('hidden');
-                    ctPopover.style.left = event.pageX - 95 + 'px';
-                    ctPopover.style.top = event.pageY - 145 + 'px';}
+                    ctPopover.style.left = event.clientX - 95 + 'px';
+                    ctPopover.style.top = event.clientY - 145 + 'px';}
             });
         });
     });
