@@ -12,7 +12,7 @@
 <body>
     <div style="display: flex; justify-content: center; align-items: center;">
         <div style="display: block; width: 700px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="959" height="593">
+    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 959 593">
         <title>Blank map of the United States, territories not included</title>
         <defs>
             <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
@@ -102,6 +102,7 @@
 
         .containerMapPopover a:hover {
             background-color: #00274c;
+            color: #FFF;
         }
 
         .containerMapPopover:after {
@@ -452,54 +453,55 @@
 
 
     </svg>
+</div>
+</div>
+
     <br/>
-    <div id="ncPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="ncPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>North Carolina</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="flPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="flPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Florida</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="gaPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="gaPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Georga</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="laPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="laPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Louisiana</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="dcPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="dcPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Washington DC</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="moPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="moPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Missouri</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="ksPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="ksPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Kansas</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="orPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="orPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Oregon</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-    <div id="ctPopover" class="containerMapPopover hidden" style="position: absolute; display: block;">
+    <div id="ctPopover" class="containerMapPopover hidden" style="position: fixed; display: block;">
         <h1>Connecticut</h1>
         <p>2 Clinics</p>
         <a href="#">View Locations</a>
     </div>
-</div>
-</div>
 
     <script>
     
@@ -617,6 +619,7 @@
             });
         });
     });
+    
     document.addEventListener('DOMContentLoaded', function() {
         let ctPopover=document.getElementById("ctPopover");
         let elements = document.querySelectorAll('.ct');
@@ -626,8 +629,8 @@
                     ctPopover.classList.add('hidden');}
                 else {
                     ctPopover.classList.remove('hidden');
-                    ctPopover.style.left = event.clientX - 95 + 'px';
-                    ctPopover.style.top = event.clientY - 145 + 'px';}
+                    ctPopover.style.left = event.pageX - 95 + 'px';
+                    ctPopover.style.top = event.pageY - 145 + 'px';}
             });
         });
     });
