@@ -580,136 +580,25 @@
     <script>
     
     document.addEventListener('DOMContentLoaded', function() {
-        let ncPopover=document.getElementById("ncPopover");
-        let elements = document.querySelectorAll('.nc');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    ncPopover.classList.add('hidden');}
-                else {
-                ncPopover.classList.remove('hidden');
-                ncPopover.style.left = event.pageX - 94 + 'px';
-                ncPopover.style.top = event.pageY - 135  + 'px';}
-            });
-        });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        let flPopover=document.getElementById("flPopover");
-        let elements = document.querySelectorAll('.fl');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    flPopover.classList.add('hidden');}
-                else {
-                    flPopover.classList.remove('hidden');
-                    flPopover.style.left = event.pageX - 94 + 'px';
-                    flPopover.style.top = event.pageY - 135  + 'px';}
-            });
-        });
-    });
+    const ids = ['ncPopover', 'flPopover', 'gaPopover', 'laPopover', 'dcPopover', 'moPopover', 'ksPopover', 'orPopover', 'ctPopover'];
+    const classes = ['.nc', '.fl', '.ga', '.la', '.dc', '.mo', '.ks', '.or', '.ct'];
 
-    document.addEventListener('DOMContentLoaded', function() {
-        let gaPopover=document.getElementById("gaPopover");
-        let elements = document.querySelectorAll('.ga');
+    ids.forEach((id, index) => {
+        let popover = document.getElementById(id);
+        let elements = document.querySelectorAll(classes[index]);
         elements.forEach(function(element) {
             document.addEventListener('click', function(event) {
                 if (!element.contains(event.target)) {
-                    gaPopover.classList.add('hidden');}
-                else {
-                    gaPopover.classList.remove('hidden');
-                    gaPopover.style.left = event.pageX - 94 + 'px';
-                    gaPopover.style.top = event.pageY - 135  + 'px';}
+                    popover.classList.add('hidden');
+                } else {
+                    popover.classList.remove('hidden');
+                    popover.style.left = event.pageX - 94 + 'px';
+                    popover.style.top = event.pageY - 135  + 'px';
+                }
             });
         });
     });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        let laPopover=document.getElementById("laPopover");
-        let elements = document.querySelectorAll('.la');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    laPopover.classList.add('hidden');}
-                else {
-                    laPopover.classList.remove('hidden');
-                    laPopover.style.left = event.pageX - 94 + 'px';
-                    laPopover.style.top = event.pageY - 135  + 'px';}
-            });
-        });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        let dcPopover=document.getElementById("dcPopover");
-        let elements = document.querySelectorAll('.dc');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    dcPopover.classList.add('hidden');}
-                else {
-                    dcPopover.classList.remove('hidden');
-                    dcPopover.style.left = event.pageX - 94 + 'px';
-                    dcPopover.style.top = event.pageY - 135  + 'px';}
-            });
-        });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        let moPopover=document.getElementById("moPopover");
-        let elements = document.querySelectorAll('.mo');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    moPopover.classList.add('hidden');}
-                else {
-                    moPopover.classList.remove('hidden');
-                    moPopover.style.left = event.pageX - 94 + 'px';
-                    moPopover.style.top = event.pageY - 135  + 'px';}
-            });
-        });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        let ksPopover=document.getElementById("ksPopover");
-        let elements = document.querySelectorAll('.ks');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    ksPopover.classList.add('hidden');}
-                else {
-                    ksPopover.classList.remove('hidden');
-                    ksPopover.style.left = event.pageX - 94 + 'px';
-                    ksPopover.style.top = event.pageY - 135  + 'px';}
-            });
-        });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        let orPopover=document.getElementById("orPopover");
-        let elements = document.querySelectorAll('.or');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    orPopover.classList.add('hidden');}
-                else {
-                    orPopover.classList.remove('hidden');
-                    orPopover.style.left = event.pageX - 94 + 'px';
-                    orPopover.style.top = event.pageY - 135  + 'px';}
-            });
-        });
-    });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        let ctPopover=document.getElementById("ctPopover");
-        let elements = document.querySelectorAll('.ct');
-        elements.forEach(function(element) {
-            document.addEventListener('click', function(event) {
-                if (!element.contains(event.target)) {
-                    ctPopover.classList.add('hidden');}
-                else {
-                    ctPopover.classList.remove('hidden');
-                    ctPopover.style.left = event.pageX - 94 + 'px';
-                    ctPopover.style.top = event.pageY - 135 + 'px';}
-            });
-        });
-    });
-    document.body.appendChild(document.createElement('div')).id = 'myID';
-
+});
 
     </script>
 
